@@ -12,7 +12,7 @@ namespace rest_tutorial_1.Models.IRepository
         CategoryDto Create(CategoryDto categoryDto);
         List<CategoryDto> GetList();
         CategoryDto GetById(Guid Id);
-        Task<CategoryDto> Update(CategoryDto categoryDto);
+        CategoryDto Update(CategoryDto categoryDto);
         bool Delete(Guid Id);
     }
 }

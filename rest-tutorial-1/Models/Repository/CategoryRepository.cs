@@ -40,13 +40,11 @@ namespace rest_tutorial_1.Models.Repository
             if (category is null) return null;
             return _mapper.Map<CategoryDto>(category);
         }
-        public async Task<CategoryDto> Update(CategoryDto categoryDto)
+        public CategoryDto Update(CategoryDto categoryDto)
         {
-            if (categoryDto is null) return null;
-            Category category = await _applicationDbContext.Category.FindAsync(categoryDto.Id);
-            if (category is null) return null;
+            if (categoryDto is null) return null;  
             _applicationDbContext.Category.Update(_mapper.Map<Category>(categoryDto));
-            await _applicationDbContext.SaveChangesAsync();
+            _applicationDbContext.SaveChanges();
             return categoryDto;
         }
         public bool Delete(Guid Id)

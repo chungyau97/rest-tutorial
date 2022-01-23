@@ -42,9 +42,9 @@ namespace rest_tutorial_1.Controllers
             return Ok(categoryDto);
         }
         [HttpPut]
-        public async Task<IActionResult> Update(CategoryDto categoryDto)
+        public IActionResult Update(CategoryDto categoryDto)
         {
-            categoryDto = await _categoryRepository.Update(categoryDto);
+            categoryDto = _categoryRepository.Update(categoryDto);
             if (categoryDto is null) return NotFound();
             return Ok(categoryDto);
         }
