@@ -1,4 +1,4 @@
-# rest-tutorial-1
+# rest-tutorial
 
 ## About The Project
 A simple CRUD category of REST APIs with .NET and C#.
@@ -11,7 +11,7 @@ To get a local copy up and running follow these simple steps.
 ### Installation
 1. Clone the repo
    ```sh
-   git clone https://github.com/chungyau97/rest-tutorial-1.git
+   git clone https://github.com/chungyau97/rest-tutorial.git
    ```
 2. Build the project
 3. Start Debugging by pressing (F5)
@@ -20,4 +20,4 @@ To get a local copy up and running follow these simple steps.
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/chungyau97/rest-tutorial-1/blob/main/LICENSE) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/chungyau97/rest-tutorial/blob/main/LICENSE) for more information.
